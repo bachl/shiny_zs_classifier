@@ -1,1 +1,3 @@
-# shiny_zs_classifier
+```r
+shiny::runGitHub( "shiny_prompt_checker", "bachl")
+```
