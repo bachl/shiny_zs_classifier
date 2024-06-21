@@ -1,4 +1,4 @@
-library(shiny)
+xlibrary(shiny)
 source("prompt_checker_function.R")
 
 ui <- fluidPage(
@@ -27,7 +27,6 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   
   results <- eventReactive(input$submit, {
-    # txts = rio::import(input$file$datapath)[[input$column]]
     txts = read.csv2(input$file$datapath)[[input$column]]
     classify(api_key = input$api_key,
              text_file = txts,
