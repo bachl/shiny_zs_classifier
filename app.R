@@ -1,4 +1,4 @@
-xlibrary(shiny)
+library(shiny)
 source("prompt_checker_function.R")
 
 ui <- fluidPage(
